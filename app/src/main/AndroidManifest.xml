@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hubert.hubquiz">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/back"
+        android:label="Jakie Państwo"
+        android:roundIcon="@drawable/back"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="Zgdanij Państwo"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HubertQuizActivity"
+            android:label="@string/title_activity_hubert_quiz"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PopLose"
+            android:theme="@style/AppTheme.NoActionBar"
+            ></activity>
+    </application>
+
+</manifest>
