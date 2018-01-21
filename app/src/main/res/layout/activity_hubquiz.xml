@@ -2,142 +2,184 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.hubert.hubquiz.HubertQuizActivity"
-    android:background="@drawable/plecki">
+    android:background="@drawable/plecki"
+    android:orientation="vertical"
+    tools:context="com.example.hubert.hubquiz.HubertQuizActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
         android:padding="8dp">
+
         <TextView
             android:id="@+id/pkt_text"
-            android:text="Points"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
-            android:textSize="20sp"
-            android:textColor="#FFF"/>
+            android:layout_alignParentStart="true"
+            android:text="Punkty"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
         <TextView
             android:id="@+id/pkt"
-            android:text="0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:textSize="20sp"
-            android:textColor="#FFF"/>
+            android:text="0"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
     </RelativeLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
         android:padding="8dp">
+
         <TextView
             android:id="@+id/chn_text"
-            android:text="Tries"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
-            android:textSize="20sp"
-            android:textColor="#FFF"/>
+            android:layout_alignParentStart="true"
+            android:text="Szanse"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
         <TextView
             android:id="@+id/chn"
-            android:text="3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:textSize="20sp"
-            android:textColor="#FFF"/>
+            android:text="3"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
     </RelativeLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:layout_gravity="center">
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1">
 
         <Button
             android:id="@+id/flaga"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
             android:background="@drawable/albania" />
+
     </RelativeLayout>
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10sp">
+        android:layout_height="70dp"
+        android:layout_marginBottom="1sp"
+        android:gravity="center_vertical|center_horizontal|center"
+        tools:orientation="vertical">
 
         <Button
             android:id="@+id/wyb1"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
             android:layout_weight="1"
             android:background="@drawable/customchoicebtn"
-            android:padding="20dp"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:padding="5dp"
             android:text="1"
             android:textColor="#fff" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="1sp"
+        android:gravity="center_vertical|center_horizontal|center"
+        tools:orientation="vertical">
+
         <Button
             android:id="@+id/wyb2"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
             android:layout_weight="1"
             android:background="@drawable/customchoicebtn"
-            android:padding="20dp"
+            android:padding="5dp"
             android:text="2"
             android:textColor="#fff" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10sp">
+        android:layout_height="70dp"
+        android:layout_marginBottom="1sp"
+        android:gravity="center_vertical|center_horizontal|center"
+        tools:orientation="vertical">
+
         <Button
             android:id="@+id/wyb3"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="3"
-            android:background="@drawable/customchoicebtn"
-            android:textColor="#fff"
-            android:padding="20dp"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
             android:layout_weight="1"
-            android:layout_margin="10dp"/>
+            android:background="@drawable/customchoicebtn"
+            android:padding="5dp"
+            android:text="3"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="1sp"
+        android:gravity="center_vertical|center_horizontal|center"
+        tools:orientation="vertical">
+
         <Button
             android:id="@+id/wyb4"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="4"
-            android:background="@drawable/customchoicebtn"
-            android:textColor="#fff"
-            android:padding="20dp"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
             android:layout_weight="1"
-            android:layout_margin="10dp"/>
+            android:background="@drawable/customchoicebtn"
+            android:padding="5dp"
+            android:text="4"
+            android:textColor="#fff" />
     </LinearLayout>
->
+
+
+    <![CDATA[
+
+
+    >
+
+
+    ]]>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20sp">
+
         <Button
-            android:background="@drawable/custombtnqquit"
             android:id="@+id/quit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Koniec"
-            android:textColor="#fff"
+            android:layout_weight="1"
+            android:background="@drawable/custombtnqquit"
             android:padding="20dp"
-            android:layout_weight="1"/>
+            android:text="KONIEC"
+            android:textColor="#fff" />
 
     </LinearLayout>
 

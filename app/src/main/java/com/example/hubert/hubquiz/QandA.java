@@ -1,8 +1,6 @@
 package com.example.hubert.hubquiz;
 
 
-import java.util.List;
-
 public class QandA {
     private String pyt [] = {
             "Afganistan",
@@ -92,8 +90,8 @@ public class QandA {
             "Kolumbia",
             "Komory",
             "Kongo",
-            "KoreaPołnocna",
-            "KoreaPołudniowa",
+            "Korea Połnocna",
+            "Korea Południowa",
             "Kostaryka",
             "Kuba",
             "Kuwejt",
@@ -195,7 +193,7 @@ public class QandA {
             "Wybrzeże Kości Słoniowej",
             "Wyspu Marshalla",
             "Wyspy Salomona",
-            "Wyspy Świętego Tomaszai Książęca",
+            "Wyspy Świętego Tomasza i Książęca",
             "Zambia",
             "Zimbabwe",
             "Zjednoczone Emirady Arabskie"};
